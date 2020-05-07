@@ -55,6 +55,12 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func signUpTapped(_ sender: Any) {
+        
+        // Validate the fields
+        
+        // Create the user
+        
+        // Transition to the home screen
     }
     
 
