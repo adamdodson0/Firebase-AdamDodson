@@ -1,8 +1,8 @@
 //
 //  LoginViewController.swift
-//  FirebaseAuth&DB-AdamDodson
+//  FirebaseAuth_AdamDodson
 //
-//  Created by Alex Dodson on 5/6/20.
+//  Created by Alex Dodson on 5/7/20.
 //  Copyright © 2020 Adam Dodson. All rights reserved.
 //
 
@@ -22,6 +22,19 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        setUpElements()
+    }
+    
+    func setUpElements() {
+        
+        // Hide the error label
+        errorLabel.alpha = 0
+        
+        // Style the elements
+        Utilities.styleTextField(firstNameTextField)
+        Utilities.styleTextField(lastNameTextField)
+        Utilities.styleFilledButton(loginButton)
     }
     
 
@@ -34,7 +47,6 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
     
     
     @IBAction func loginTapped(_ sender: Any) {
